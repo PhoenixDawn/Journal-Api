@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  # before_action :authenticate
+
   rescue_from Exception, with: :handle_exception
   before_action :set_category, only: [:update, :destory, :show]
 

@@ -1,4 +1,6 @@
 class EntriesController < ApplicationController
+  # before_action :authenticate
+
   rescue_from Exception, with: :handle_exception
   before_action :set_entry, only: [:update, :destory, :show]
 
